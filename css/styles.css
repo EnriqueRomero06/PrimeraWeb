@@ -5,10 +5,21 @@ body {
 	margin: 0;
 	font-family: Arial;
 }
+.tex-negro {
+	color: black;
+}
+.tex-blanco {
+	color: white;
+}
+.center-aling {
+	margin: 0 auto;
+	width: 1100px;
+}
 
 #intro-container {
 	background-color: black;
-	color: white;
+
+	padding-top: 100px;
 }
 #intro-container menu {
 	padding: 0;
@@ -22,6 +33,11 @@ body {
 #intro-container menu #logo {
 	width: 9%;
 }
+#intro-container menu #logo img {
+	width: 50px;
+	height: 50px;
+}
+
 #intro-container menu #menu-lista {
 	width: 89%;
 	text-align: right;
@@ -33,10 +49,59 @@ body {
 #intro-container menu #menu-lista ul li {
 	display: inline-block;
 	padding: 0;
-	margin: 0;
 	list-style: none;
 }
 #intro-container menu #menu-lista a {
 	color: #283747;
+	margin: 0 5px;
 	text-decoration: none;
+}
+
+#intro-container menu #menu-lista a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/* .section-column {
+} */
+.section-column > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+.section-column h2 {
+	font-size: 72px;
+	padding-top: 90px;
+	/* padding-bottom: -5px; */
+}
+
+.btn {
+	border: solid 1px;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+.btn-black {
+	border-color: black;
+	color: black;
+}
+.btn-black:hover {
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+.btn-white {
+	border-color: white;
+	color: white;
+}
+.btn-white:hover {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+.section-column #image-bg {
+	background-image: url("../asset/img/profile.png");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: 130px -9px;
 }
