@@ -11,6 +11,11 @@ body {
 .tex-blanco {
 	color: white;
 }
+
+.tex-oscuro{
+    color: #283747;
+}
+
 .center-aling {
 	margin: 0 auto;
 	width: 1100px;
@@ -18,8 +23,8 @@ body {
 
 #intro-container {
 	background-color: black;
-
-	padding-top: 100px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 #intro-container menu {
 	padding: 0;
@@ -62,23 +67,53 @@ body {
 	text-decoration: underline;
 }
 
-/* .section-column {
-} */
 .section-column > div {
 	display: inline-block;
 	vertical-align: top;
 	width: 49%;
 }
+
 .section-column h2 {
 	font-size: 72px;
-	padding-top: 90px;
-	/* padding-bottom: -5px; */
+}
+
+span {
+	position: relative;
+}
+
+span::after {
+	background-color: #2837475e;
+	content: "";
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: -1;
+}
+.section-column h3 {
+	font-size: 26px;
+	font-weight: lighter;
+	line-height: 40px;
+}
+
+.section-column p {
+	font-weight: lighter;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+#intro-container .section-column h2 {
+	padding-top: 70px;
+	padding-bottom: 0px;
 }
 
 .btn {
 	border: solid 1px;
 	padding: 15px 25px;
 	text-decoration: none;
+    margin-right: 10px;
 }
 .btn-black {
 	border-color: black;
@@ -104,4 +139,56 @@ body {
 	background-repeat: no-repeat;
 	background-size: 300px;
 	background-position: 130px -9px;
+}
+
+.section2 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.rectangle {
+	height: 100px;
+	margin-top: -111px;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.skew-left {
+	transform: skewY(-4deg);
+}
+
+.section3,
+.section4,
+.section5,
+.section6 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: gray;
+}
+
+.bg-gray {
+	background-color: gray;
+}
+.skew-right {
+	transform: skewY(4deg);
+}
+
+.section-column #image-bg2 {
+	background-image: url("../asset/img/segundaimagen.png");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 416px;
+	background-position: 131px 32px;
+}
+
+.section7 {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: black;
+}
+
+.bg-black{
+    background-color: black;
 }
